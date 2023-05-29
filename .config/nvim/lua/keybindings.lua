@@ -24,7 +24,9 @@ map("n", "<leader>s", ":Telescope grep_string<CR>", opt)
 -- nvim-tree
 map("n", "<F4>", ":NvimTreeToggle<CR>", opt)
 
-
+local opt2 = {noremap = true, silent =false}
+map("n", "<F3>", ":set noexpandtab<CR>", opt2)
+map("n", "<F2>", ":set expandtab<CR>", opt2)
 -- lsp
 local pluginKeys = {}
 
