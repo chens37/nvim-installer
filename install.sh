@@ -22,6 +22,7 @@ apt-get install -y tar
 apt-get install -y zip
 apt-get install -y unzip
 apt-get install -y fuse
+apt-get install -y xclip
 
 apt-get install -y nodejs npm
 apt-get install n -g

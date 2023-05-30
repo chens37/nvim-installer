@@ -18,5 +18,5 @@ lua require('plugins-config/cmp')
 
 " 补全
 "lua require('lsp/nvim-cmp')
-
+set clipboard+=unnamedplus
 " term
