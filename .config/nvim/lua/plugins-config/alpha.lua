@@ -72,35 +72,45 @@ local col = function(strlist, opts)
 end
 
 local my_unimpaired = {
-  "[s ]s    prev/next spelling error",
-  "[c ]c    prev/next Git change",
-  "[d ]d    prev/next diagnostics",
-  "[b ]b    prev/next buffer",
-  "[z ]z    prev/next tab",
-  "[f ]f    prev/next file",
-  "[q ]q    prev/next quickfix list",
-  "[l ]l    prev/next location list",
+  "<leader> = ,",
+  "hjkl       left/down/up/right move the cursor",
+  "e          move to end of current word",
+  "b          move to begin of current word",
+  "gg         move to first line",
+  "G          move to last line",
+  ":<Number>  move to <Number> line",
+  "n          next match symbol",
+  "<Ctrl-\\>            open or close terminal",
+  "<num><Ctrl-\\>    open different terminal ",
+  "<leader>q            close opened terminal",
+  "<leader>q  exit nvim",
 }
 
 local vim_signature = {
-  "mx dmx               toggle mark 'x'",
-  "m, m. m- m<Space>    place/remove/delete all on current line/delete all buffer marks",
-  "[` ]` [' ]'          jump to prev/next mark | start of a line with mark",
-  "`[ `]                jump by alphabetical order to prev/next mark",
-  "'[ ']                jump by alphabetical order to start of prev/next line having a mark",
-  "m[0-9]               toggle the marker !@#$%^&*()",
-  "m<S-[0-9]>           remove all markers of the same type",
-  "[- ]- [= ]=          jump to prev line having a marker of the same type",
-  "m<BS>                remove all markers",
+  "Telescope            ",
+  "<leader>f            find files",
+  "<leader>s            find symbol in current cursor", 
+  "<leader>g            find symbol using RipGrep", 
+  "<leader>b            find files in buffers",
+  "<Ctrl-v>             go to file selection as a vsplit",
+  "<Ctrl-x>             go to file selection as a split",
+  "<Ctrl-j>             next item",
+  "<Ctrl-k>             previous item",
+  "<Ctrl-u>             scroll up in preview window",
+  "<Ctrl-d>             scroll down in preview window",
+  "<Esc>                Close Telescope",
 }
 
 local my_alts = {
-  "ALT-A          Compress spaces in current line",
-  "ALT-SHIFT-A    Compress spaces in current paragraph",
-  "ALT-I          Toggle terminal window",
-  "ALT-Q          Rewrap current paragraph",
-  "ALT-W          Toggle line wrap",
-  "ALT-D          Toggle show hidden",
+  "NvimTree",
+  "<F4>           open nvimtree",
+  "a              create new file",
+  "d              delete file ",
+  "c              copy file",
+  "p              paste file",
+  "r              rename",
+  "s              search",
+  "o              open",
 }
 
 local fzf_vim = {
