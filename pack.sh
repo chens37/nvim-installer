@@ -58,7 +58,7 @@ cp -pr .local/* $HOME_USR/.local/
 
 if [[ -f $HOME_USR/.local/share/nvim/site/pack/packer/start/plugin.tar.gz 
     && ! -f $HOME_USR/.local/share/nvim/site/pack/packer/start/.installed ]];then
-  tar -xzvf $HOME_USR/.local/share/nvim/site/pack/packer/start/plugin.tar.gz -C ~/.local/share/nvim/site/pack/packer/start/
+  tar -xzvf $HOME_USR/.local/share/nvim/site/pack/packer/start/plugin.tar.gz -C $HOME_USR/.local/share/nvim/site/pack/packer/start/
   touch $HOME_USR/.local/share/nvim/site/pack/packer/start/.installed
 fi
 
